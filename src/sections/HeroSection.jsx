@@ -19,6 +19,7 @@ function HeroSection() {
 
       {/* Background Image */}
       <img
+      loading="lazy"
         src={hero_img}
         alt="Engineering and construction"
         className="absolute inset-0 w-full h-full object-cover"

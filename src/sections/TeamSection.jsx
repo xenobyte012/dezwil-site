@@ -47,6 +47,7 @@ function TeamSection() {
 
               {/* Image */}
               <img
+                loading="lazy" 
                 src={member.img}
                 alt={member.name}
                 className="w-full h-56 object-cover"

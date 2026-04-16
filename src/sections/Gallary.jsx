@@ -91,6 +91,7 @@ function Gallary() {
                 }`}
               >
                 <img
+                  loading="lazy"
                   src={project.img}
                   alt={project.title}
                   className="w-full h-full object-cover"
