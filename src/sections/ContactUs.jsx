@@ -1,147 +1,119 @@
 ﻿import React from "react";
-import {
-  Phone,
-  Mail,
-  MessageCircle,
-} from "lucide-react";
-import ourGoalsImage from "../images/hero-img.jpg";
+import { Phone, Mail, MessageCircle } from "lucide-react";
+import contactImage from "../images/hero-img.jpg";
 
 function ContactUs() {
-  const phoneNumber = "27704419275";
-  const message = "Hello, I am interested in your service.";
+  const phoneNumber = "27794663720";
+  const message = "Hello, I am interested in your engineering services.";
   const encodedMessage = encodeURIComponent(message);
 
   return (
-    <>
-      <section className="bg-background-1 text-normal-text-1 py-16 px-6" id="contact">
-        
-        {/* Header */}
-        <div className="max-w-5xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-400 mb-4">
-            Contact Us
-          </h2>
-          <p className="text-heading-1">
-            Get in touch with us today for fast and reliable appliance repair services.
-          </p>
-        </div>
+    <section id="contact" className="bg-gray-200 py-16 px-6">
 
-        {/* Layout */}
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+      {/* Header */}
+      <div className="max-w-5xl mx-auto text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Contact Us
+        </h2>
 
-          {/* Contact Info */}
-          <div className="space-y-6 ">
-            
-            <div className="flex items-center gap-4">
-              <Phone className="text-blue-400" />
-              <div>
-                <p className="font-semibold">Call Us</p>
-                <p className="text-sub-heading-1">070 441 9275</p>
-              </div>
+        <p className="text-gray-700">
+          Let’s discuss your next project. We deliver reliable engineering solutions across mining and industrial operations.
+        </p>
+      </div>
+
+      {/* Layout */}
+      <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+        {/* LEFT: Contact Info */}
+        <div className="space-y-6">
+
+          <div className="flex items-center gap-4">
+            <Phone className="text-blue-600" />
+            <div>
+              <p className="font-semibold text-gray-900">Phone</p>
+              <p className="text-gray-700">+27 79 466 3720</p>
             </div>
-
-            <div className="flex items-center gap-4">
-              <Mail className="text-blue-400" />
-              <div>
-                <p className="font-semibold">Email</p>
-                <p className="text-sub-heading-1">xenobyte012@gmail.com</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <MessageCircle className="text-blue-400" />
-              <div>
-                <p className="font-semibold">WhatsApp</p>
-                <a
-                  href={`https://wa.me/${phoneNumber}?text=${encodedMessage}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:underline"
-                >
-                  Start Chat
-                </a>
-              </div>
-            </div>
-
-            {/* Image 
-            <div className="mt-6 rounded-xl overflow-hidden">
-              <img
-                src={ourGoalsImage}
-                alt="contact"
-                className="w-full h-64 object-cover"
-              />
-            </div>
-            */}
           </div>
 
-          {/* Form */}
-          <form className="bg-slate-800 p-8 rounded-2xl shadow-lg space-y-4">
-            
+          <div className="flex items-center gap-4">
+            <Mail className="text-blue-600" />
             <div>
-              <label className="block text-sub-heading-2 mb-1 text-sm">Name</label>
-              <input
-                type="text"
-                placeholder="Full name"
-                className="w-full p-3 rounded-lg bg-slate-900 text-white outline-none"
-                required
-              />
+              <p className="font-semibold text-gray-900">Email</p>
+              <p className="text-gray-700">wilson.dezwil@gmail.com</p>
             </div>
+          </div>
 
+          <div className="flex items-center gap-4">
+            <MessageCircle className="text-blue-600" />
             <div>
-              <label className="block text-sub-heading-2 mb-1 text-sm">Email</label>
-              <input
-                type="email"
-                placeholder="you@example.com"
-                className="w-full p-3 rounded-lg bg-slate-900 text-white outline-none"
-                required
-              />
+              <p className="font-semibold text-gray-900">WhatsApp</p>
+              <a
+                href={`https://wa.me/${phoneNumber}?text=${encodedMessage}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                Start Chat
+              </a>
             </div>
+          </div>
 
-            <div>
-              <label className="block text-sub-heading-2 mb-1 text-sm">Phone</label>
-              <input
-                type="text"
-                placeholder="071 234 5678"
-                className="w-full p-3 rounded-lg bg-slate-900 text-white outline-none"
-                required
-              />
-            </div>
+          <div className="pt-4">
+            <p className="font-semibold text-gray-900">Locations</p>
+            <p className="text-gray-700">Phokeng & Rustenburg</p>
+          </div>
 
-            <div>
-              <label className="block text-sub-heading-2 mb-1 text-sm">Message</label>
-              <textarea
-                placeholder="Your message..."
-                className="w-full p-3 rounded-lg bg-slate-900 text-white min-h-[120px] outline-none"
-                required
-              ></textarea>
-            </div>
 
-            <button
-              type="submit"
-              className="w-full text-white bg-blue-600 hover:bg-blue-500 transition py-3 rounded-lg font-semibold"
-            >
-              Send Message
-            </button>
-          </form>
         </div>
-      </section>
 
-      {/* Map Section 
-      <section className="py-16 px-6 bg-slate-100 text-center">
-        <h2 className="text-3xl font-bold">Find Us</h2>
-        <p className="mt-2 text-gray-600">
-          Visit us or find our location on the map
-        </p>
-
-        <div className="max-w-5xl mx-auto mt-8 rounded-xl overflow-hidden shadow-lg">
-          <iframe
-            src="https://www.google.com/maps?q=-25.6544,27.2558&output=embed"
-            className="w-full h-[500px] md:h-[400px]"
-            loading="lazy"
-          ></iframe>
+        {/* RIGHT: IMAGE (Desktop focus visual) 
+        <div className="hidden md:blocfk">
+          <img
+            src={contactImage}
+            alt="Engineering site"
+            className="w-full h-[420px] object-cover rounded-2xl shadow-lg"
+          />
         </div>
-      </section>
-      */}
-    </>
+        */}
+         <div className="max-w-6xl mx-auto mt-12 md:block">
+        <form className="bg-white p-8 rounded-2xl shadow-lg space-y-4">
+
+          <h3 className="text-xl font-bold text-gray-900 mb-4">
+            Send Us a Message
+          </h3>
+
+          <input
+            type="text"
+            placeholder="Full Name"
+            className="w-full p-3 rounded-lg bg-gray-100 outline-none"
+          />
+
+          <input
+            type="email"
+            placeholder="Email Address"
+            className="w-full p-3 rounded-lg bg-gray-100 outline-none"
+          />
+
+          <textarea
+            placeholder="Message"
+            className="w-full p-3 rounded-lg bg-gray-100 min-h-[150px] outline-none"
+          ></textarea>
+
+          <button
+            type="submit"
+            className="w-full bg-blue-600 hover:bg-orange-500 text-white py-3 rounded-lg font-semibold transition"
+          >
+            Send Message
+          </button>
+
+        </form>
+      </div>
+      </div>
+
+      {/* FORM */}
+      
+
+    </section>
   );
 }
 

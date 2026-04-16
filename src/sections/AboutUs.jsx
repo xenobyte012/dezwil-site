@@ -1,48 +1,41 @@
 import React from "react";
-import ourGoalsImage from '../images/ct (2).jpg' 
 
 function AboutUs() {
   return (
-    <section className="bg-basckground-2 bg-slate-900 text-normal-text-2 py-12  px-4 text-center">
-      <div>
-        <h1 className="text-4xl font-bold text-center pb-3 text-heading-2">
-          About Us
-        </h1>
-      </div>
-      <div className="  grid md:grid-cols-2 gap-6 pt-6">
-        <div className="text-left">
-          <h1 className="text-xl font-semibold pb-6 text-subheading-2">
-            We Don’t Just Tutor. We Transform
-          </h1>
-          <div className="block md:hidden  pt-2 px-4 pb-4">
-            <img
-              loading="lazy"
-              src={ourGoalsImage}
-              alt="our goal images"
-              className="rounded-xl object-cover shadow-2xl w-full"
-            />
-          </div>
-          <div className="pl-4">
-            <p className="pb-4 ">
-              At St Dave Academy , we replace frustration with clarity. Our
-              structured, one‑on‑one and small‑group sessions are designed to
-              help learners not only raise their grades but also rediscover the
-              joy of learning.
-            </p>
-            <p>
-              We believe every student has untapped potential — our job is to
-              give them the tools, confidence, and support to unlock it.
-            </p>
-          </div>
+    <section id="about" className="bg-gray-200 py-20">
+
+      <div className="max-w-6xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-10 items-center">
+
+        {/* Text Content */}
+        <div>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            About Dezwil Engineering
+          </h2>
+
+          <p className="mt-6 text-gray-700 text-lg leading-relaxed">
+            Dezwil Engineering Construction Pty Ltd is a 100% black-owned company founded in 2022.
+             We provide professional Structural, Mechanical, Electrical, Instrumentation, and Civil e
+             ngineering services, as well as general supply.
+          </p>
+
+          <p className="mt-4 text-gray-700 text-lg leading-relaxed">
+           With a strong client-first philosophy, we focus on delivering projects safely, on time, and within budget while maintaining
+           the highest standards of quality and reliability.
+          </p>
+          <p className="mt-4 text-gray-700 text-lg leading-relaxed">
+           Our skilled management team and experienced professionals enable us to handle both small and large-scale projects in the mining and construction sectors. We are committed to safety, environmental responsibility, and community development – especially improving access to education.
+          </p>
         </div>
-        <div className="hidden md:block  pt-2 ">
+
+        {/* Image */}
+        <div>
           <img
-            loading="lazy"
-            src={ourGoalsImage}
-            alt="our goal images"
-            className="rounded-xl object-cover shadow-2xl w-full"
+            src="https://images.unsplash.com/photo-1503387762-592deb58ef4e"
+            alt="Engineering work"
+            className="w-full h-[450px] object-cover rounded-2xl shadow-lg"
           />
         </div>
+
       </div>
     </section>
   );

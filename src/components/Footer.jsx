@@ -1,5 +1,10 @@
 ﻿import React from "react";
-import { FaWhatsapp, FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
+import {
+  FaWhatsapp,
+  FaFacebook,
+  FaInstagram,
+  FaTiktok,
+} from "react-icons/fa";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -8,39 +13,40 @@ function Footer() {
     {
       name: "WhatsApp",
       icon: FaWhatsapp,
-      url: "https://wa.me/27721234567?text=Hi%20Dave%20Academy",
+      url: "https://wa.me/27794663720?text=Hello%20Dezwil%20Engineering%2C%20I%27m%20interested%20in%20your%20services",
       color: "hover:text-green-500",
     },
     {
       name: "Facebook",
       icon: FaFacebook,
-      url: "https://www.facebook.com/profile.php?id=61552208605900",
-      color: "hover:text-blue-600",
+      url: "#",
+      color: "hover:text-blue-500",
     },
     {
       name: "Instagram",
       icon: FaInstagram,
-      url: "https://www.instagram.com/stdaveacademy",
-      color: "hover:text-pink-600",
+      url: "#",
+      color: "hover:text-pink-500",
     },
     {
       name: "TikTok",
       icon: FaTiktok,
-      url: "https://www.tiktok.com/@st_dave_academy",
-      color: "hover:text-gray-400",
+      url: "#",
+      color: "hover:text-gray-300",
     },
   ];
 
   const navLinks = [
-    { name: "Home", href: "/" },
-{ name: "Pricing", href: "#pricing" },
+    { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
-    
+    { name: "Services", href: "#services" },
+    { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
   ];
 
   return (
     <footer className="bg-slate-950 text-white py-16 px-6">
+
       <div className="max-w-7xl mx-auto">
 
         {/* Top Grid */}
@@ -48,23 +54,26 @@ function Footer() {
 
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-orange-300 bg-clip-text text-transparent mb-3">
-              A plus Appliance Repair
+            <h3 className="text-2xl font-bold text-blue-400 mb-3">
+              Dezwil Engineering Construction Pty Ltd
             </h3>
+
             <p className="text-gray-400 text-sm leading-relaxed">
-              Same-day service for all major brands. Affordable, professional, and trusted by homeowners.
+              Delivering reliable Structural, Mechanical, Electrical, Instrumentation,
+              and Civil engineering solutions across mining and industrial sectors.
             </p>
           </div>
 
           {/* Navigation */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+
             <div className="flex flex-col gap-2">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-gray-400 hover:text-orange-500 transition"
+                  className="text-gray-400 hover:text-blue-400 transition"
                 >
                   {link.name}
                 </a>
@@ -75,10 +84,11 @@ function Footer() {
           {/* Contact */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
+
             <div className="text-gray-400 text-sm space-y-2">
-              <p>📍 Pretoria, South Africa</p>
-              <p>📞 +27 64 182 2578</p>
-              <p>📧 A plus Appliance Repair@gmail.com</p>
+              <p>📍 Phokeng & Rustenburg</p>
+              <p>📞 +27 79 466 3720</p>
+              <p>📧 wilson.dezwil@gmail.com</p>
             </div>
 
             {/* Socials */}
@@ -100,21 +110,21 @@ function Footer() {
 
         {/* Divider */}
         <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-          
-          <p>© {currentYear} A plus Appliance Repair. All rights reserved.</p>
+
+          <p>© {currentYear} Dezwil Engineering Construction Pty Ltd. All rights reserved.</p>
 
           <p>
             Designed by{" "}
             <a
-              href="https://xenobytewebstudio.co.za"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-orange-500 hover:text-orange-400 transition"
+              href="#"
+              className="text-blue-400 hover:text-blue-300 transition"
             >
               Xenobyte Web Studio
             </a>
           </p>
+
         </div>
+
       </div>
     </footer>
   );

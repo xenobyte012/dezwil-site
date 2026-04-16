@@ -1,9 +1,15 @@
 import React from "react";
-import heroImage from "../images/hero-img.jpg";
+import hero_img from "../images/pexels-abdullahcadirci-7795496.jpg"
 
 function HeroSection() {
   const scrollToContact = () => {
     document.getElementById("contact")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  const scrollToServices = () => {
+    document.getElementById("services")?.scrollIntoView({
       behavior: "smooth",
     });
   };
@@ -13,48 +19,47 @@ function HeroSection() {
 
       {/* Background Image */}
       <img
-        src="https://saafikcool.co.za/wp-content/uploads/2025/06/Appliance-repair-Johannesburg-and-surrounding-area.jpg.webp"
-        alt="Appliance repair service"
+        src={hero_img}
+        alt="Engineering and construction"
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      {/* Dark overlay (VERY IMPORTANT for readability) */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/70"></div>
 
       {/* Content */}
-      
       <div className="relative z-10 flex flex-col justify-center h-screen px-6 md:px-12 max-w-5xl">
-        
-        {/* Heading */}
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-          Fast & Reliable Appliance Repair Near You
+
+        {/* Company Name */}
+        <h2 className="text-sm md:text-lg text-gray-300 uppercase tracking-widest">
+          Dezwil Engineering Construction Pty Ltd
+        </h2>
+
+        {/* Main Heading */}
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight mt-2">
+          Engineering Solutions for Mining and Industry
         </h1>
 
         {/* Subheading */}
-        <p className="mt-4 text-lg md:text-xl text-gray-200 max-w-xl">
-          Same-day service for all major brands. Affordable, professional, and trusted by homeowners.
-        </p>
-
-        {/* Trust line */}
-        <p className="mt-4 text-sm text-gray-300">
-          ⭐ 98% customer satisfaction | Same-day service available
+        <p className="mt-4 text-lg md:text-xl text-gray-200 max-w-2xl">
+          We deliver Structural, Mechanical, Electrical, Instrumentation, and Civil services with a client-first approach, focused on quality, safety, and on-time delivery.
         </p>
 
         {/* Buttons */}
-        <div className="mt-8 flex flex-col sm:flex-row gap-8">
+        <div className="mt-8 flex flex-col sm:flex-row gap-6">
           
           <button
             onClick={scrollToContact}
-            className="bg-red-600 hover:bg-red-500 transition px-8 py-4 rounded-full text-lg font-semibold"
+            className="bg-orange-500 hover:bg-red-700 transition px-8 py-4 rounded-full text-lg font-semibold"
           >
-            Call Now
+            Request a Quote
           </button>
 
           <button
-            onClick={scrollToContact}
-            className="bg-green-500 hover:bg-green-400 transition px-8 py-4 rounded-full text-lg font-semibold"
+            onClick={scrollToServices}
+            className="border border-white hover:bg-white hover:text-black transition px-8 py-4 rounded-full text-lg font-semibold"
           >
-            📞 WhatsApp Us
+            View Services
           </button>
 
         </div>
