@@ -24,7 +24,6 @@ function TeamSection() {
 
   return (
     <section id="team" className="bg-blue-700 py-20 text-white">
-
       <div className="max-w-6xl mx-auto px-6 md:px-12">
 
         {/* Heading */}
@@ -37,34 +36,38 @@ function TeamSection() {
         </p>
 
         {/* Cards */}
-        <div className="mt-12 grid md:grid-cols-3 gap-8">
+        <div className="mt-14 grid md:grid-cols-3 gap-10">
 
           {team.map((member, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300"
+              className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 group"
             >
 
               {/* Image */}
-              <img
-                loading="lazy" 
-                src={member.img}
-                alt={member.name}
-                className="w-full h-56 object-cover"
-              />
+              <div className="overflow-hidden">
+                <img
+                  loading="lazy"
+                  src={member.img}
+                  alt={member.name}
+                  className="w-full h-56 object-cover group-hover:scale-105 transition duration-500"
+                />
+              </div>
 
               {/* Content */}
               <div className="p-6 text-center">
 
-                <h3 className="text-xl font-bold text-gray-900">
+                <h3 className="text-lg md:text-xl font-bold text-gray-900">
                   {member.name}
                 </h3>
 
-                <p className="text-blue-600 font-semibold mt-1">
+                <p className="text-blue-600 font-semibold mt-1 text-sm uppercase tracking-wide">
                   {member.role}
                 </p>
 
-                <p className="text-gray-600 mt-3 text-sm leading-relaxed">
+                <div className="w-10 h-[2px] bg-blue-600 mx-auto my-3"></div>
+
+                <p className="text-gray-600 text-sm leading-relaxed">
                   {member.desc}
                 </p>
 

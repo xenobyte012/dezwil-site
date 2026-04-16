@@ -21,10 +21,10 @@ function ContactUs() {
         </p>
       </div>
 
-      {/* Layout */}
-      <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      {/* MAIN GRID */}
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-start">
 
-        {/* LEFT: Contact Info */}
+        {/* LEFT SIDE */}
         <div className="space-y-6">
 
           <div className="flex items-center gap-4">
@@ -63,19 +63,18 @@ function ContactUs() {
             <p className="text-gray-700">Phokeng & Rustenburg</p>
           </div>
 
+          {/* IMAGE (only desktop) */}
+          <div className="hidden md:block mt-6">
+            <img
+              src={contactImage}
+              alt="Engineering site"
+              className="w-full h-64 object-cover rounded-2xl shadow-lg"
+            />
+          </div>
 
         </div>
 
-        {/* RIGHT: IMAGE (Desktop focus visual) 
-        <div className="hidden md:blocfk">
-          <img
-            src={contactImage}
-            alt="Engineering site"
-            className="w-full h-[420px] object-cover rounded-2xl shadow-lg"
-          />
-        </div>
-        */}
-         <div className="max-w-6xl mx-auto mt-12 md:block">
+        {/* RIGHT SIDE - FORM */}
         <form className="bg-white p-8 rounded-2xl shadow-lg space-y-4">
 
           <h3 className="text-xl font-bold text-gray-900 mb-4">
@@ -85,33 +84,30 @@ function ContactUs() {
           <input
             type="text"
             placeholder="Full Name"
-            className="w-full p-3 rounded-lg bg-gray-100 outline-none"
+            className="w-full p-3 rounded-lg bg-gray-100 outline-none focus:ring-2 focus:ring-blue-500"
           />
 
           <input
             type="email"
             placeholder="Email Address"
-            className="w-full p-3 rounded-lg bg-gray-100 outline-none"
+            className="w-full p-3 rounded-lg bg-gray-100 outline-none focus:ring-2 focus:ring-blue-500"
           />
 
           <textarea
             placeholder="Message"
-            className="w-full p-3 rounded-lg bg-gray-100 min-h-[150px] outline-none"
+            className="w-full p-3 rounded-lg bg-gray-100 min-h-[150px] outline-none focus:ring-2 focus:ring-blue-500"
           ></textarea>
 
           <button
             type="submit"
-            className="w-full bg-blue-600 hover:bg-orange-500 text-white py-3 rounded-lg font-semibold transition"
+            className="w-full bg-blue-600 hover:bg-blue-500 text-white py-3 rounded-lg font-semibold transition"
           >
             Send Message
           </button>
 
         </form>
-      </div>
-      </div>
 
-      {/* FORM */}
-      
+      </div>
 
     </section>
   );
