@@ -24,34 +24,37 @@ function ClientsSection() {
         {/* Logos */}
         <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-10">
 
-          
-            <div
-              
-              className="bg-white w-65 h-32 rounded-2xl shadow-md flex items-center justify-center hover:shadow-xl transition"
-            >
-              <img
-                src={sibanye}
-                alt="Sibanye Stillwater"
-            className={`max-h-12 w-full scale-159  object-contain opacity-80 hover:opacity-100 transition `}
-              />
-            </div>
-             <div
-            
-              className="bg-white w-65 h-32 rounded-2xl shadow-md flex items-center justify-center hover:shadow-xl transition"
-            >
-              <img
-                src={platinum}
-                alt= "ValterraPlatinum"
-            className={`max-h-15 w-9/10 h-full object-cover opacity-80 hover:opacity-100 transition `}
-              />
-              <img
-                src={rustenbung}
-                alt= "Rustenburg Local Municipality"
-            className={`max-h-15 w-9/10 h-full object-cover opacity-80 hover:opacity-100 transition `}
-              />
-            </div>
-          
 
+          <div
+
+            className="bg-white w-65 h-32 rounded-2xl shadow-md flex items-center justify-center hover:shadow-xl transition"
+          >
+            <img
+              src={sibanye}
+              alt="Sibanye Stillwater"
+              className={`max-h-12 w-full scale-159  object-contain opacity-80 hover:opacity-100 transition `}
+            />
+          </div>
+          <div
+
+            className="bg-white w-65 h-32 rounded-2xl shadow-md flex items-center justify-center hover:shadow-xl transition"
+          >
+            <img
+              src={platinum}
+              alt="ValterraPlatinum"
+              className={`max-h-15 w-9/10 h-full object-cover opacity-80 hover:opacity-100 transition `}
+            />
+
+          </div>
+
+          <div
+
+            className="bg-white w-65 h-32 rounded-2xl shadow-md flex items-center justify-center hover:shadow-xl transition"
+          >              <img
+              src={rustenbung}
+              alt="Rustenburg Local Municipality"
+              className={`max-h-15 w-9/10 h-full object-cover opacity-80 hover:opacity-100 transition `}
+            /></div>
         </div>
 
         {/* Location Text */}
