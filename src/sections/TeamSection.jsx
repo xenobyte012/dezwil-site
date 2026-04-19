@@ -1,5 +1,6 @@
 import React from "react";
-
+import img_36 from "../images/img/IMG-20260419-WA0032.jpg";
+import img_58 from "../images/img/IMG-20260419-WA0054.jpg";
 function TeamSection() {
   const team = [
     {
@@ -12,13 +13,13 @@ function TeamSection() {
       name: "Harry Seleke",
       role: "Technical Support",
       desc: "Brings over 20 years of experience in maintenance and projects.",
-      img: "https://www.creativefabrica.com/wp-content/uploads/2022/06/02/Client-employee-business-man-icon-Graphics-31597820-1.jpg",
+      img: {img_36},
     },
     {
       name: "Thabo Lengamanyane",
       role: "Administration Officer",
       desc: "Handles administrative functions and support.",
-      img: "https://www.creativefabrica.com/wp-content/uploads/2022/06/02/Client-employee-business-man-icon-Graphics-31597820-1.jpg",
+      img: {img_58},
     },
   ];
 

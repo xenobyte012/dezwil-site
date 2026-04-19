@@ -1,6 +1,7 @@
 import React from "react";
 import sibanye from "../images/Sibanye-Stillwater.svg.png"
 import platinum from "../images/Valterra-Platinum-Logo.webp"
+import rustenbung from "../images/Rustenburg-Local-Municipality.png"
 
 function ClientsSection() {
 
@@ -41,6 +42,11 @@ function ClientsSection() {
               <img
                 src={platinum}
                 alt= "ValterraPlatinum"
+            className={`max-h-15 w-9/10 h-full object-cover opacity-80 hover:opacity-100 transition `}
+              />
+              <img
+                src={rustenbung}
+                alt= "Rustenburg Local Municipality"
             className={`max-h-15 w-9/10 h-full object-cover opacity-80 hover:opacity-100 transition `}
               />
             </div>

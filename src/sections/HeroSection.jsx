@@ -1,5 +1,5 @@
 import React from "react";
-import hero_img from "../images/pexels-abdullahcadirci-7795496.jpg"
+import hero_img from "../images/img/IMG-20260419-WA0030.jpg"
 
 function HeroSection() {
   const scrollToContact = () => {
