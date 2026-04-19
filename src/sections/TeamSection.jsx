@@ -1,6 +1,6 @@
 import React from "react";
 import img_36 from "../images/img/IMG-20260419-WA0032.jpg";
-import img_58 from "../images/img/IMG-20260419-WA0054.jpg";
+import img_58 from "../images/pp-1.jpg";
 function TeamSection() {
   const team = [
     {
