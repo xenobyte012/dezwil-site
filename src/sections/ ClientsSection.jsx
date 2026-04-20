@@ -50,10 +50,10 @@ function ClientsSection() {
           <div
 
             className="bg-white w-65 h-32 rounded-2xl shadow-md flex items-center justify-center hover:shadow-xl transition"
-          >              <img
+          >  <img
               src={rustenbung}
               alt="Rustenburg Local Municipality"
-              className={`max-h-15 w-9/10 h-full object-cover opacity-80 hover:opacity-100 transition `}
+              className={`max-h-15 w-9/10 h-xl object-cover opacity-80 hover:opacity-100 transition `}
             /></div>
         </div>
 

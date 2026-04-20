@@ -1,5 +1,5 @@
 import React from "react";
-import img_36 from "../images/img/IMG-20260419-WA0032.jpg";
+import img_36 from "../images/img/IMG-20260419-WA0036.jpg";
 import img_58 from "../images/pp-1.jpg";
 function TeamSection() {
   const team = [
@@ -13,13 +13,13 @@ function TeamSection() {
       name: "Harry Seleke",
       role: "Technical Support",
       desc: "Brings over 20 years of experience in maintenance and projects.",
-      img: {img_36},
+      img: img_36,
     },
     {
       name: "Thabo Lengamanyane",
       role: "Administration Officer",
       desc: "Handles administrative functions and support.",
-      img: {img_58},
+      img: img_58,
     },
   ];
 
@@ -51,7 +51,7 @@ function TeamSection() {
                   loading="lazy"
                   src={member.img}
                   alt={member.name}
-                  className="w-full h-56 object-cover group-hover:scale-105 transition duration-500"
+                  className="w-full h-78 object-cover group-hover:scale-105 transition duration-500"
                 />
               </div>
 
