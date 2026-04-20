@@ -1,7 +1,7 @@
 ﻿import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Phone, Mail, MessageCircle } from "lucide-react";
-import contactImage from "../images/hero-img.jpg";
+
 
 function ContactUs() {
   const formRef = useRef();
@@ -85,17 +85,10 @@ function ContactUs() {
 
           <div className="pt-4">
             <p className="font-semibold text-gray-900">Locations</p>
-            <p className="text-gray-700">Phokeng & Rustenburg</p>
+            <p className="text-gray-700">Rustenburg</p>
           </div>
 
-          {/* IMAGE */}
-          <div className="hidden md:block mt-6">
-            <img
-              src={contactImage}
-              alt="Engineering site"
-              className="w-full h-64 object-cover rounded-2xl shadow-lg"
-            />
-          </div>
+          
 
         </div>
 
