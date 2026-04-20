@@ -1,4 +1,5 @@
 import React from "react";
+import aboutUs from "../images/aboutus.jpg"
 
 function AboutUs() {
   return (
@@ -30,7 +31,7 @@ function AboutUs() {
         {/* Image */}
         <div>
           <img
-            src="https://images.unsplash.com/photo-1503387762-592deb58ef4e"
+            src={aboutUs}
             alt="Engineering work"
             className="w-full h-[450px] object-cover rounded-2xl shadow-lg"
           />

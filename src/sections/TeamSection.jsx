@@ -1,13 +1,15 @@
 import React from "react";
 import img_36 from "../images/img/IMG-20260419-WA0036.jpg";
 import img_58 from "../images/pp-1.jpg";
+import profile from "../images/pp-2.jpg";
+
 function TeamSection() {
   const team = [
     {
       name: "Wilson T. Selemogo",
       role: "Managing Director",
       desc: "Leads daily operations and company direction.",
-      img: "https://www.creativefabrica.com/wp-content/uploads/2022/06/02/Client-employee-business-man-icon-Graphics-31597820-1.jpg",
+      img: profile,
     },
     {
       name: "Harry Seleke",
