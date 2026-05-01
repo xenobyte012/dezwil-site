@@ -7,6 +7,11 @@ import img_5 from "../images/img-5.jpg";
 import img_8 from "../images/img-8.jpg";
 import img_9 from "../images/img-9.jpg";
 
+import img_57 from "../images/new-1.jpg";
+import img_58 from "../images/img-2.jpg";
+import img_59 from "../images/img-3.jpg";
+import img_60 from "../images/img-4.jpg";
+
 import img_12 from "../images/img-12.jpg";
 import img_13 from "../images/img/IMG-20260419-WA0009.jpg";
 import img_16 from "../images/img/IMG-20260419-WA0012.jpg";
@@ -103,6 +108,10 @@ function Gallary() {
     { img: img_54, title: "Future Leaders Initiative 🌟" },
     { img: img_55, title: "Black-Owned Excellence ✊🏿" },
     { img: img_56, title: "Industry Game Changer 🎯" },
+    { img: img_57, title: "Education Access Programs 📚" },
+    { img: img_58, title: "Future Leaders Initiative 🌟" },
+    { img: img_59, title: "Black-Owned Excellence ✊🏿" },
+    { img: img_60, title: "Industry Game Changer 🎯" },
 
   ];
 
