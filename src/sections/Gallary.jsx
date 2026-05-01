@@ -7,10 +7,10 @@ import img_5 from "../images/img-5.jpg";
 import img_8 from "../images/img-8.jpg";
 import img_9 from "../images/img-9.jpg";
 
-import img_57 from "../images/new-1.jpg";
-import img_58 from "../images/img-2.jpg";
-import img_59 from "../images/img-3.jpg";
-import img_60 from "../images/img-4.jpg";
+import img_57 from "../images/new-1.jpeg";
+import img_58 from "../images/new-2.jpeg";
+import img_59 from "../images/new-3.jpeg";
+import img_60 from "../images/new-4.jpeg";
 
 import img_12 from "../images/img-12.jpg";
 import img_13 from "../images/img/IMG-20260419-WA0009.jpg";
